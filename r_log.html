@@ -1,0 +1,94 @@
+<!--PABALLO MOLATI 1818416-->
+<!DOCTYPE html>
+<head>
+<meta charset="uft-8"> 
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title> Sk'haftine R_log page </title>
+<link rel="stylesheet" type="text/css" href="thestyle.css">
+ <script type="text/javascript">
+
+function validate()
+{
+	var  password = document.getElementById("password");
+	var  restaurant = document.getElementById("restaurant");
+	
+	if(password.value.trim() =="" ||restaurant.value =="" )
+     { alert("ACCESS DENIED!!..fill all fields");
+	   return false;
+	 
+	 }
+     else
+	 {alert("ACCESS CRANTED.....");
+	 
+	  true;
+	 }
+	
+	 
+}
+</script>
+</head>
+<body>
+      <div class="header">    
+				<h1>SK'HAFTINI WEB APP</h1>
+					<ul>
+					  <li><a class="active2" href="#">Welcome back</a></li>				   
+				      <li><a href="home_page.html"> Home </a></li>
+
+			
+	     </ul>
+	  
+	  </div>
+	  
+	  
+	  <section>
+	  	<div class="log_page">
+			
+				<div class="form">	
+				
+	  
+	  <form  action="r_log_collect.php" method="post" class="logging_in_form" id="form" onsubmit="return validate()" >
+	  <fieldset>
+		
+			<legend>Log in</legend>
+			
+		<label for="Restaurant_Name">Restaurant_Name  <font>*</font></label></br>
+			<input type="text" name="Restaurant_Name" placeholder="Restaurant_Name" id="restaurant"/></br>	
+
+			<label for="Password">Password  <font>*</font></label></br>
+			<input type="password" name="password" placeholder="password" id="password" /></br>		
+			<br>
+			<button type="submit">Log_in</button> <input type="reset" value="CLEAR"/>
+			<p class="message"> Not Registered ? <a class="move" href="res_restaurant.html"> Register </a></p>
+			
+		  </fieldset>	
+			
+		</form>
+	 
+	 		
+	  
+	  </div>
+	  </div>
+	   
+	  
+	  
+	  
+	  
+	  
+	  </section>
+	  
+	  
+	  
+	  
+	  <footer>
+	  
+	           
+              <p>Copyright&copy:Sk'haftini Web App 2020 | Designed by Paballo Molati</p>
+		
+	  
+	  
+	  </footer>
+	  
+
+
+</body>
+</html>

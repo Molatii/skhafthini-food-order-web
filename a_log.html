@@ -1,0 +1,95 @@
+<!--PABALLO MOLATI 1818416-->
+<!DOCTYPE html>
+<head>
+<meta charset="uft-8"> 
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title> Sk'haftine A_log page </title>
+<link rel="stylesheet" type="text/css" href="thestyle.css">
+<script  type="text/javascript">
+function validate()
+{
+	var  Password = document.getElementById("Password");
+	var  number = document.getElementById("number");
+	
+	if(Password.value.trim() =="" || number.value =="" )
+     { alert("ACCESS DENIED!!..fill all fields");
+	   return false;
+	 
+	 }
+     else
+	 {alert("ACCESS CRANTED.....");
+	 
+	  true;
+	 }
+	
+	 
+}
+</script>
+</head>
+<body>
+      <div class="header">    
+				<h1>SK'HAFTINI WEB APP</h1>
+					<ul>
+					  <li><a class="active2" href="#">Welcome back</a></li>				   
+				      <li><a href="home_page.html"> Home </a></li>
+
+			
+	     </ul>
+	  
+	  </div>
+	  
+	  
+	  <section>
+	  
+	  <div id="error"></div>
+	  	<div class="log_page">
+			
+				<div class="form">	
+				
+	  
+	  <form action="a_log_collect.php" method="post" class="logging_in_form" id="form" onsubmit="return validate()">
+	  <fieldset>
+		
+			<legend>Log in</legend>
+			
+		<label for="Unique_number">Unique_number  <font>*</font></label></br>
+			<input type="number" name="Unique_number" placeholder="Unique_number" id="number"/></br>	
+
+			<label for="Password">Password  <font>*</font></label></br>
+			<input type="Password" name="Password" placeholder="Password" id="Password" /></br>		
+			<br>
+			<button  type="submit">Log_in</button> <input type="reset" value="CLEAR"/>
+
+			
+		  </fieldset>	
+
+
+
+			
+		</form>
+	 
+	 		
+	  
+	  </div>
+	  </div>
+	  
+	  
+	  </section>
+	  
+	  
+	  
+	  
+	  <footer>
+	  
+	           
+              <p>Copyright&copy:Sk'haftini Web App 2020 | Designed by Paballo Molati</p>
+		
+	  
+	  
+	  </footer>
+	  
+
+
+</body>
+
+</html>

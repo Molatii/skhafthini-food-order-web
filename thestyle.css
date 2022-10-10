@@ -1,0 +1,196 @@
+<style>
+
+*{ margin:0; padding:0;box-sizing:border-box;} 
+
+body  { background: url(food.jpg) no-repeat;
+      background-size:cover;
+	  height:100vh;
+	  background-position:left;
+	  font-family: sens-serif,Calibri;
+	  
+	  padding-bottom:58px;	 
+     }
+.cc {color:white; font-size:17px; font-family:calibri; background-color: rgba(0,0,0,.3);}
+
+/*the header starts here*/	 
+	 
+h1 {	 color:white;background-color:green; text-align:center;}
+
+.header { width:100%;
+		  background-color: rgba(0,0,0,.3);
+		}
+		
+.header ul { text-align:center;}
+.header ul li {
+			list-style:none;
+			display: inline-block; }
+			
+			
+.header ul li a {
+				display:block;
+				text-decoration:none;
+				text-transform:uppercase;
+				color:white;
+				font-size:20px;
+				letter-spacing:2px;
+				font-weight:600;
+				padding:30px;
+				transition:all ease 0.5s;
+			}	
+			
+.header  ul li a:hover{background-color:green; }
+.active2 {background-color:green;}
+
+/*header ends here*/
+
+
+
+
+
+
+
+/*home page body style*/
+.main {
+       margin:0;
+	   padding:0;
+	   display:flex;
+	   justify-content:center;
+	   text-align:center;
+	   align-items:center;
+	   font-family: sens-serif,Calibri;
+
+      }
+	/*end  home page body style*/
+
+
+
+
+	
+	  
+	/* log in and resgistrarion pages style*/  
+.choice { text-transform:uppercase; letter-spacing:2px;color:white; text-align:center;font-size:23px;  display:inline-block;}
+
+ .choice:hover {
+ 
+         color:white;
+		 background:green;
+		 box-shadow: 0 0 10px green, 0 0 40px green;
+         transition-delay: 0.1s;
+  
+         } 	
+
+/*style of selected link */
+.Lk { color:white; background-color:green}
+
+	
+/**end OF log in and resgistrarion pages style of*/		
+ 
+			 
+/* log in and register links style made diffrent from the headers eg.(box-shadow etc...)(*/	
+.LL { background-color: rgba(0,0,0,.3); }
+.Lk2 { color:white;}
+	  
+.LL{
+   position:relative;
+   display:inline-block;
+   padding:15px 30px;
+   color:white;
+   text-transform:uppercase;
+   letter-spacing:4px;
+   text-decoration:none;
+   font-size:24px;
+   overflow:hidden;
+   transition:0.2s;
+   }
+ .LL:hover {
+ 
+         color:white;
+		 background:green;
+		 box-shadow: 0 0 10px green, 0 0 40px green;
+         transition-delay: 0.1s;
+ 
+ 
+ 
+         } 
+/*end of  log in and register links style*/		 
+	 
+    
+/* the forms style*/
+.log_page { width:360px; /*padding:10% 0 0;*/ margin:auto;}	 
+.form { position:relative;
+		   
+		   background-color:green;
+		   max-width:360px;
+		   margin:0 auto 100px;
+		   padding: 27px;
+		   text-align:center;
+		   color:white;}
+	   
+ 
+.food{ color:white; background-color:green;}		
+		   		   
+		
+.form  input { font-family:sans-serif;
+            outline:1;
+			background:white;
+	    }
+
+.form button{ color:black;
+             outline:0;
+			 text-transform:uppercase;
+			 }
+
+.form button:hover,.form button:active{ background:lightgreen;}
+
+.move {color:blue;}
+font {color:red;}
+
+/* table */
+
+
+.view {  
+		 background:green;
+		 text-align:left;
+		 color:white;
+		}
+.view2 { background:green;
+		 text-align:left;
+		 color:white;
+		  
+		 }
+.look2 {color:white; text-align:top;  }
+
+
+/* end of table */
+
+/* admin view table style */
+.view {color:white;
+ background-color:green; 
+ width:50%;
+ text-align:left;
+ }
+ 
+ /* form aboutt Concern style*/
+.looks { background-color: rgba(0,0,0,.3); color:white;}
+.lolos { background-color:green;}
+
+/* end of admin view table style*/				 
+ 
+				 
+/*the footer start here (footer set to fixed to allows on the page moves*/	
+
+footer {
+		text-align:center;
+		 background-color:green;
+		
+		color:white;
+		padding:8px;
+		position:fixed;
+		left:0;
+        bottom:0;
+        width:99%;
+		z-index:1;
+      }	
+			
+
+</style>

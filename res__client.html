@@ -1,0 +1,113 @@
+<!--PABALLO MOLATI 1818416-->
+<!DOCTYPE html>
+<head>
+<meta charset="uft-8"> 
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title> Sk'haftine clint resgister page </title>
+<link rel="stylesheet" type="text/css" href="thestyle.css">
+<script >
+    function validate(){
+	 var password = document.getElementById('password');
+	  var number = document.getElementById('number');
+	
+	 if (password.value.length <"5")
+   {
+	alert("Password should be not less than 5 digits and should be numbers only...");
+	 
+   if (number.value.length <"8" || number.value.length >"12")
+   {
+	alert("number should  not be less than 8 digits or more than 12 digits..."); 
+   }
+	
+      return false;
+   }
+   else
+   { 
+      true;
+   }
+   
+   
+}
+</script>
+</head>
+<body>
+      <div class="header">    
+				<h1>SK'HAFTINI WEB APP</h1>
+					<ul>
+					  <li><a class="active2" href="#">Welcome </a></li>				   
+				      <li><a href="home_page.html"> Home </a></li>
+
+			
+	     </ul>
+	  
+	  </div>
+	  
+	  
+	  <section>
+	  	<div class="log_page">
+			
+				
+	  
+	  
+			
+	  	<div class="form">
+			
+				<form class="register_form"   action="client_collect.php" method="POST"  onsubmit="return validate()" name="form" >
+				
+		
+		<fieldset>
+		
+			<legend>Register</legend>		
+			
+			<label for="Phone_number">Phone_number  <font>*</font></label></br>
+			<input type="telephone" name="phone_number" placeholder="phone_number" id="number" /></br>	
+
+			<label for="Email">Email  <font>*</font></label></br>
+			<input type="email" name="email" placeholder="Email_Address" id="email" required /></br>	
+			
+			<label for="Address">Address  <font>*</font></label></br>
+			<input type="text" name="address" placeholder="address"  id="address" required /></br>	
+			
+			<label for="Password">Password <font>*</font></label></br>
+			<input type="password" name="password" placeholder="password" id="password" /></br>		
+			<br>
+			<button type="submit" value="submit" name="submit" >Create_account</button> <input type="reset" value="CLEAR"/>			
+			
+			<p class="message"> Already Registered ? <a class="move" href="c_log.html"> Login</a></p> 
+		</fieldset>	
+	
+
+
+	
+	
+	
+	
+	
+	 </form>
+				
+				
+	  
+	    </div>
+	  </div>
+	  
+	  
+	  
+	  </section>
+	  
+	  
+	  
+	  
+	  <footer>
+	  
+	           
+              <p>Copyright&copy:Sk'haftini Web App 2020 | Designed by Paballo Molati</p>
+		
+	  
+	  
+	  </footer>
+	  
+
+
+</body>
+
+</html>

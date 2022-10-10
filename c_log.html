@@ -1,0 +1,95 @@
+<!--PABALLO MOLATI 1818416-->
+<!DOCTYPE html>
+<head>
+<meta charset="uft-8"> 
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title> Sk'haftine log page </title>
+<link rel="stylesheet" type="text/css" href="thestyle.css">
+ <script type="text/javascript">
+
+function validate()
+{
+	var  Password = document.getElementById("Password");
+	var  Phone_number = document.getElementById("Phone_number");
+	
+	if(Password.value.trim() =="" || Phone_number.value =="" )
+     { alert("ACCESS DENIED!!..fill all fields");
+	   return false;
+	 
+	 }
+     else
+	 {alert("ACCESS CRANTED.....");
+	 
+	  true;
+	 }
+	
+	 
+}
+</script>
+</head>
+<body>
+      <div class="header">    
+				<h1>SK'HAFTINI WEB APP</h1>
+					<ul>
+					  <li><a class="active2" href="#">Welcome back</a></li>				   
+				      <li><a href="home_page.html"> Home </a></li>
+
+			
+	     </ul>
+	  
+	  </div>
+	  
+	  
+	  <section>
+	  
+			<div class="log_page">
+			
+				<div class="form">	
+				
+	  
+	  <form action="c_log_collect.php" method="POST" class="logging_in_form" id="form" onsubmit="return validate()">
+	  <fieldset>
+		
+			<legend>Log in</legend>
+			
+		<label for="Phone_number">Unique_number  <font>*</font></label></br>
+			<input type="telephone" name="phone_number" placeholder="phone_number" id="Phone_number" /></br>	
+
+			<label for="Password">Password  <font>*</font></label></br>
+			<input type="Password" name="password" placeholder="password" id="Password" /></br>		
+			<br>
+			<button type="submit" name="submit" value="submit">Log_in</button> <input type="reset" value="CLEAR"/>
+			<p class="message"> Not Registered ? <a class="move" href="res__client.html"> Register </a></p>
+			
+		  </fieldset>	
+		
+			
+			
+			
+			
+			
+		</form>
+	 
+	 		
+	  
+	  </div>
+	  </div>
+	  
+	  </section>
+	  
+	  
+	  
+	  
+	  <footer>
+	  
+	           
+              <p>Copyright&copy:Sk'haftini Web App 2020 | Designed by Paballo Molati</p>
+		
+	  
+	  
+	  </footer>
+	
+
+
+</body>
+</html>
